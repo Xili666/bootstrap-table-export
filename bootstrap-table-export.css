@@ -1,0 +1,48 @@
+.bootstrap-table-export-modal-dialog {
+    width: 900px;
+}
+
+.bootstrap-table-export-span-field {
+    display: inline-block;
+    width: 15%;
+}
+
+.bootstrap-table-export-span-name {
+    display: inline-block;
+    width: 20%;
+}
+
+.bootstrap-table-export-span-default {
+    display: inline-block;
+    width: 20%;
+}
+
+.bootstrap-table-export-span-search {
+    display: inline-block;
+    width: 25%;
+}
+
+.bootstrap-table-export-span-edit {
+    display: inline-block;
+    width: 15%;
+}
+
+.bootstrap-table-export-span-edit a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bootstrap-table-export-btn-option {
+    margin: 2px;
+}
+
+#bootstrap-table-export-bottom {
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    min-height: 2rem;
+}
+
+.bootstrap-table-export-bottom-span-hint {
+    display: block;
+    text-align: center;
+}

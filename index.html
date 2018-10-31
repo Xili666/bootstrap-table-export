@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>index</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-table-export.css">
+</head>
+
+<body>
+    <button id="button">导出</button>
+    <div id="myModal"></div>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="bootstrap-table-export.js"></script>
+    <script>
+        var $export = $('#button');
+        $export.bootstrapTableExport({
+            url: 'http://localhost:8080/index',
+            filename: '文件名',
+            dialog: $('#myModal'),
+            title: '导出信息',
+            // fields: 'http://localhost:8080/fields'
+            fields: [{
+                field: 'id',
+                name: '编号',
+                default: '',
+                select: true,
+                type: 'number'
+            }, {
+                field: 'name',
+                name: '姓名',
+                default: '0',
+                select: true,
+                type: 'string'
+            }, {
+                field: 'birth',
+                name: '生日',
+                default: '',
+                type: 'date-month'
+            }]
+        });
+
+        $('#myModal').modal('show');
+    </script>
+</body>
+
+</html>
