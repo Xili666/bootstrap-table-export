@@ -26,22 +26,22 @@
 
 ```json
 fields: [{
-    field: 'id',
-    name: '编号',
-    default: '',
-    select: true,
-    type: 'number'
+    "field": "id",
+    "name": "编号",
+    "default": "",
+    "select": true,
+    "type": "number"
 }, {
-    field: 'name',
-    name: '姓名',
-    default: '0',
-    select: true,
-    type: 'string'
+    "field": "name",
+    "name": "姓名",
+    "default": "0",
+    "select": true,
+    "type": "string"
 }, {
-    field: 'birth',
-    name: '生日',
-    default: '',
-    type: 'date-month'
+    "field": "birth",
+    "name": "生日",
+    "default": "",
+    "type": "date-month"
 }]
 ```
 
